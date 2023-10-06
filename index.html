@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon/icons8-rocket-office-m-16.png" />
+    <script src="script.js" defer></script>
+    <title>Sign Up | Rocket™!</title>
+</head>
+<body>
+    <main class="card-container">
+    <div class="card left-card">
+        <h1 class="company"><div class="company-name">Rocket™</div></h1>
+        <img class="illustration" src="./assets/RocketSVG.svg" alt="">
+        <p class="quote">Sign up today!</p>
+    </div>
+    <div class="card right-card">
+        <form action="" method="">
+            <div class="form-container">
+                <h1 class="form-header">Let's do this!</h1>
+                <div class="input-container">
+                    <label for="f-name"></label>
+                    <input id="f-name" placeholder="" type="text" minlength="1" name="f-name" required>
+                    <span>First Name</span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="l-name"></label>
+                    <input id="l-name" placeholder="" type="text" minlength="1" name="l-name" required>
+                    <span>Last Name</span>
+                    <div class="error"></div>
+                </div>
+                <div class="input-container">
+                    <label for="mail"></label>
+                    <input id="mail" placeholder="" type="email" name="mail" required>
+                    <span>Email</span>
+                    <div class="error">*Please enter a valid email address</div>
+                </div>
+                <div class="input-container">
+                    <label for="phone"></label>
+                    <input id="phone" placeholder="" type="tel" name="phone" minlength="10" maxlength="16" required>
+                    <span>Phone</span>
+                    <div class="error">*Phone number must contain 10-16 digits</div>
+                </div>
+                <div class="input-container">
+                    <label for="user_password"></label>
+                    <input id="user_password" class="password" placeholder="" type="password" minlength="10" name="user_password" required>
+                    <span>Password</span>
+                    <div class="error">*Password must contain at least 10 characters</div>
+                </div>
+                <div class="input-container">
+                    <label for="user_password_confirm"></label>
+                    <input id="user_password_confirm" class="password" placeholder="" type="password" minlength="10" name="user_password_confirm" required>
+                    <span>Confirm Password</span>
+                    <div class="error" id="passwordError">*Passwords must match</div>
+                </div>
+                <div id="btm">
+                    <button class="submit-btn" type="submit">Create Account</button>
+                    <p class="btm-text">
+                        Already have an account?
+                        <span class="btm-text-highlighted">Log in</span>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
